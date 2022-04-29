@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN npm install
 RUN npm run build
-ENV PORT 3000
+ENV PORT 8080
 EXPOSE $PORT
 CMD node "dist/main.js"
 
